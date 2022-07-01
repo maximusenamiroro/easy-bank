@@ -1,0 +1,237 @@
+ @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+@media (min-width: 360px) {
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+*, body, html{
+    font-size: 18px;
+    font-family: 'Public Sans', sans-serif;
+    margin: 0%;
+}
+.logo{
+    padding: 1em ; 
+    background-color: white;
+}
+.hamburger{
+    float: right;
+}
+.button-nav{
+ visibility: hidden;
+ background-color: (hsl(192, 70%, 51%),hsl(136, 65%, 51%), hsl(233, 26%, 24%) );
+}
+.anchor{
+    visibility: hidden;
+}
+header{
+    margin-top: -13em;
+    background-image: url(/images/bg-intro-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    font-family: 'Public Sans', sans-serif;
+    text-align: center;
+
+}
+header img{
+    display: inline-block;
+    clip-path: inset(138px 0px 0px 0px);
+    margin-top: -7.6em;
+}
+header h1{
+    font-weight: 700;
+    font-size: 40px;
+    margin: 1em;
+
+}
+ p{
+   color:  hsl(233, 8%, 62%);
+   line-height: 20px;
+   margin: auto 2em;
+}
+.button{
+    background:  hsl(192, 70%, 51%);
+    background: linear-gradient(315deg, hsl(192, 70%, 51%), hsl(136, 65%, 51%) );
+    color: white;
+    border-radius: 30px;
+    padding: 20px 50px;
+    margin: 2em;
+    text-decoration: none;
+    border: none; 
+}
+    
+}
+.button-div{
+    margin-top: 1em;
+    text-align: center;
+    margin-bottom: 2em;
+}
+.services{
+    background-color: hsl(220, 16%, 96%);
+    text-align: center;
+    padding-bottom: 3em;
+}
+.services img{
+    margin: 1em auto;
+}
+h2{
+    text-align: center;
+    font-size: 40px;
+    margin: auto;
+}
+.choose{
+    padding: 2em 0;
+}
+.latest-article{
+    margin: 1em;
+}
+.latest-article img{
+    border-radius: 10px 10px 0 0;
+}
+.article-images{
+    margin: 3em auto;
+}
+h3{
+    margin: 1em 2em;
+    font-size: 20px;
+}
+.writers{
+    font-size: smaller;
+    margin: 1em 3em;
+}
+footer{
+    text-align: center;
+    background-color: hsl(233, 26%, 24%);
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+footer a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    line-height: 2em;
+}
+footer p{
+    color: white;
+    margin-top: -.5em;
+}
+.footer-logo{
+    margin: 1em auto;
+}
+.last-logo{
+    background-color: white;
+    border: none;
+    padding: .5em;
+    border-radius: 30px;
+}
+.socials{
+    margin: 1em auto;
+    letter-spacing: 1em;
+}
+footer button{
+    margin: 2em;
+}
+
+@media (min-width: 1030px){
+
+    .logo{
+        background-color:white;
+        padding: 3em auto auto 5em;
+        margin: 2em auto 1em 7em;
+    }
+    .hamburger{
+        visibility: hidden;
+    }
+    .button-nav{
+        visibility: visible;
+        float: right;
+        margin: -3em 6em auto auto;
+    }
+    header{
+        background-image: url(/images/bg-intro-desktop.svg);
+        background-size: contain;
+        background-position: right 0%;
+        background-position: top 50%;
+        width: 100%;
+        display: flex;
+        text-align: center;
+        background-color: hsl(0, 0%, 98%);
+    }
+    .anchor{
+        visibility: visible;
+        list-style: none;
+    }
+    .anchor a{
+        float: right;
+        text-decoration: none;
+        color: hsl(233, 8%, 62%) ;
+        margin: -1em 3em 1em auto;
+    }
+    .header-imgtext{
+        display: flex; 
+        flex-direction: row-reverse;  
+    }
+    .heading{
+        margin: 3em;
+        padding: 3em;
+        text-align: start;
+    }
+    .choose, h2 {
+        text-align: start;
+        padding: 1em;
+
+    }
+    .choose p{
+        padding-bottom: 3em;
+    }
+    h2 {
+        text-align: start; 
+    }
+    .services {
+        padding: 3em;
+    }
+    .services-img{
+        display: flex;
+        text-align: start;
+        margin: auto 2em ;
+    }
+    .subheading{
+        margin-left: -2em;
+    }
+    .articles{
+        display: flex;
+        margin: 2em;
+        gap: 2em;
+    }
+    small{
+        font-size: 10px;
+    }
+    .list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 5em;
+         padding: auto 2em; 
+        margin: auto 5em; 
+        list-style: none;
+    }
+    .footer-logo{
+        display: flex;
+        justify-content: center;
+        padding: auto 2em;
+        margin-left: 5em;
+    }
+    .button-copy{
+        margin: -2em 6em auto auto;
+        padding-left: 3em;
+    }
+    .socials{
+        margin-top: 1.8em;
+    }
+    footer{
+       padding: 3em;
+    }
+}
